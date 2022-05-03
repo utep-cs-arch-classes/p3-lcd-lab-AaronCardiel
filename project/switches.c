@@ -1,6 +1,7 @@
 #include "switches.h"
 #include "lcdutils.h"
 #include "lcddraw.h"
+#include "stateMachine.h"
 
 int switches = 0;
 char switch1_down;
@@ -39,16 +40,5 @@ switch_interrupt_handler(void)
   switch3_down = (p2val & SW3) ? 0 : 1;
   switch4_down = (p2val & SW4) ? 0 : 1;
   
-//   if(switch1_down){
-//         clearScreen(COLOR_BLUE);
-//     }
-//     if(switch2_down){
-//         clearScreen(COLOR_RED);
-//     }
-//     if(switch3_down){
-//         clearScreen(COLOR_GREEN);
-//     }
-//     if(switch4_down){
-//         clearScreen(COLOR_BLACK);
-//     }
+  changeState();
 }

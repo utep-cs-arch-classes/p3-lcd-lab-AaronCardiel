@@ -11,10 +11,5 @@ void main(){
     switch_init();
     
     clearScreen(COLOR_WHITE);
-    
-//     switch1_down = 1;
-//     switch2_down = 1;
-//     switch3_down = 1;
-//     switch4_down = 1;
     or_sr(0x18);
 }
