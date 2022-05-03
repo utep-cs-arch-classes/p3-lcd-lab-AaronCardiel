@@ -3,7 +3,9 @@
 
 #include <msp430.h>
 
-#define LED BIT6
+// WARNING: LCD DISPLAY USES P1.0.  Do not touch!!! 
+
+#define LED BIT6		/* note that bit zero req'd for display */
 
 #define SW1 1                   /* BIT0 */
 #define SW2 2                   /* BIT1 */
@@ -18,6 +20,10 @@ extern char switch2_down;
 extern char switch3_down;
 extern char switch4_down;
 
-void switches_init(void);
 
-#endif
+/* initializes the switches  */
+void switch_init(void);
+/* Handles switch interrupts */
+void switch_interrupt_handler(void);
+
+#endif // _SWITCHES_H_

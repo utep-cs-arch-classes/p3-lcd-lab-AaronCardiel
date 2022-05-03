@@ -1,6 +1,6 @@
  
 # makefile configuration
-COMMON_OBJECTS		= switches.o
+COMMON_OBJECTS		= switches.o p2_interrupt_handler.o
 CPU             	= msp430g2553
 CFLAGS          	= -mmcu=${CPU} -Os -I../h
 LDFLAGS		= -L../lib -L/opt/ti/msp430_gcc/include/ 

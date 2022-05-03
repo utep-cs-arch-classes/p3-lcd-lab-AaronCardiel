@@ -8,11 +8,13 @@ void main(){
 
     configureClocks();
     lcd_init();
-    switches_init();
+    switch_init();
     
-    enableWDTInterrupts();
+    clearScreen(COLOR_WHITE);
     
-    clearScreen(COLOR_RED);
-    
-    or_sr(0x10);
+//     switch1_down = 1;
+//     switch2_down = 1;
+//     switch3_down = 1;
+//     switch4_down = 1;
+    or_sr(0x18);
 }
