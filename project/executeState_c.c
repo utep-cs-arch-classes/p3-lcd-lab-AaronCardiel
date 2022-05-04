@@ -5,16 +5,16 @@
 void executeState(){
     switch(state){
         case 1:
-            song1();
+            carelessWhisper();
             break;
         case 2:
-            song2();
+            dayNNite();
             break;
         case 3:
-            song3();
+            laCancion();
             break;
         case 4:
-            song4();
+            smellsLikeTeenSpirit();
             break;
     }
 }

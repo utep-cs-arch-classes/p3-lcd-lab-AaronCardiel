@@ -11,5 +11,6 @@ void main(){
     switch_init();
     
     clearScreen(COLOR_WHITE);
+    enableWDTInterrupts();
     or_sr(0x18);
 }
