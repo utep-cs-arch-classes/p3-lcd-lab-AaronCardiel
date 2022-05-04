@@ -4,16 +4,16 @@
 
 void executeState(){
     switch(state){
-        case 1:
+        case 0:
             carelessWhisper();
             break;
-        case 2:
+        case 1:
             dayNNite();
             break;
-        case 3:
+        case 2:
             laCancion();
             break;
-        case 4:
+        case 3:
             smellsLikeTeenSpirit();
             break;
     }

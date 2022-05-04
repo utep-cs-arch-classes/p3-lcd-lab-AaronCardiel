@@ -18,16 +18,16 @@ void __interrupt_vec(WDT_VECTOR) WDT(){
         second_count = 0;
         current_column = 20;
         switch(state){
-            case 1: 
+            case 0: 
                 clearShape(COLOR_BLUE);
                 break;
-            case 2:
+            case 1:
                 clearShape(COLOR_RED);
                 break;
-            case 3:
+            case 2:
                 clearShape(COLOR_GREEN);
                 break;
-            case 4:
+            case 3:
                 clearShape(COLOR_BLACK);
                 break;
         }
@@ -35,16 +35,16 @@ void __interrupt_vec(WDT_VECTOR) WDT(){
     
     if(second_count % 25 == 0){
         switch(state){
-            case 1:
+            case 0:
                 drawSaxophone(current_column, current_row);
                 break;
-            case 2:
+            case 1:
                 drawMoon(current_column, current_row);
                 break;
-            case 3:
+            case 2:
                 drawBunny(current_column, current_row);
                 break;
-            case 4:
+            case 3:
                 drawHand(current_column, current_row);
                 break;
         }
