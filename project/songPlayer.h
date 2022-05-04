@@ -37,8 +37,14 @@
 #define Ab5 602
 #define A5 568
 
-
+// Song players for current state
 void playCarelessWhisper();
 void playDayNNite();
 void playLaCancion();
 void playSmellsLikeTeenSpirit();
+
+// Helps play song
+void quaterNote(int note);
+void eightNote(int note);
+void halfNote(int note);
+void wholeNote(int note);

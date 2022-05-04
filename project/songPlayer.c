@@ -3,6 +3,7 @@
 #include "buzzer.h"
 #include "songPlayer.h"
 
+// Plays careless whisper
 void playCarelessWhisper(){
     quaterNote(Cs5);
     eightNote(B4);
@@ -22,17 +23,22 @@ void playCarelessWhisper(){
     halfNote(D5);
     
 }
+
+// Plays day n nite
 void playDayNNite(){
     buzzer_set_period(300);
 }
 
+// Plays la cancion
 void playLaCancion(){
     buzzer_set_period(400);
 }
 
+//Plays smells Like Teen Spirit
 void playSmellsLikeTeenSpirit(){
     buzzer_set_period(500);
 }
+
 
 void quaterNote(int note){
     buzzer_set_period(note);

@@ -4,7 +4,7 @@
 #include "lcddraw.h"
 #include "shapes.h"
 
-
+//Draws saxophone for careless whisper
 void drawSaxophone(int col, int row){
 //     Left side of sax
     fillRectangle(col, row, 1, 5, COLOR_YELLOW);
@@ -28,6 +28,7 @@ void drawSaxophone(int col, int row){
     
 }
 
+//Draws moon for careless whisper
 void drawMoon(int col, int row){
   int x_coord = col;
   int y_coord = row;
@@ -64,6 +65,7 @@ void drawMoon(int col, int row){
   fillRectangle(col + 6, row - 5, 2, 3, COLOR_BLACK);
 }
 
+//Draws bunny for la cancion
 void drawBunny(int col, int row){
     fillRectangle(col - 4, row - 2, 10, 6, COLOR_WHITE);
     fillRectangle(col - 3, row - 9, 2, 7, COLOR_WHITE);
@@ -79,6 +81,7 @@ void drawBunny(int col, int row){
     fillRectangle(col + 2, row + 3, 1, 1, COLOR_PINK);
 }
 
+//Draws hand for smells like teen spirit
 void drawHand(int col, int row){
     fillRectangle(col + 3, row, 4, 1, COLOR_BEIGE);
     fillRectangle(col, row - 2, 7, 2, COLOR_BEIGE);
@@ -96,8 +99,9 @@ void drawHand(int col, int row){
     fillRectangle(col + 4, row - 11, 2, 8, COLOR_BEIGE);
 }
 
+//Helps draw moon
 void
-drawLines(u_int x_coord, u_int y_coord, u_int x_point, u_int y_point, u_int color)
+drawLines(int x_coord, int y_coord, int x_point, int y_point, int color)
 {
   // bottom
   drawHorizontalLine(x_coord - x_point, x_coord + x_point, y_coord + y_point, color);
@@ -109,8 +113,9 @@ drawLines(u_int x_coord, u_int y_coord, u_int x_point, u_int y_point, u_int colo
 					  
 }
 
+//Helps draw moon
 void
-drawHorizontalLine(u_int x_start, u_int x_end, u_int y, u_int colorBGR)
+drawHorizontalLine(int x_start, int x_end, int y, int colorBGR)
 {
   u_int length = x_end - x_start;
   // set the draw area from the start of the line to the end

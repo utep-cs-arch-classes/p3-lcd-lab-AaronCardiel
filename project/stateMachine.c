@@ -9,6 +9,7 @@
 
 int state;
 
+// Sets state of program based on switches
 void changeState(){
   if(switch1_down){
     state = 0;
@@ -29,14 +30,14 @@ void changeState(){
   executeState();
 }
 
-
+// Careless whisper state
 void carelessWhisper(){
     clearScreen(COLOR_BLUE);
     drawString5x7(30, 53, "Now Playing", COLOR_RED, COLOR_BLUE);
     drawString5x7(20, 106, "Careless Whisper", COLOR_RED, COLOR_BLUE);
     playCarelessWhisper();
 }
-
+// Day N Nite state
 void dayNNite(){
     clearScreen(COLOR_RED);
     drawString5x7(30, 53, "Now Playing", COLOR_BLUE, COLOR_RED);
@@ -44,6 +45,7 @@ void dayNNite(){
     playDayNNite();
 }
 
+// La Cancion State
 void laCancion(){
     clearScreen(COLOR_GREEN);
     drawString5x7(30, 53, "Now Playing", COLOR_RED, COLOR_GREEN);
@@ -51,6 +53,7 @@ void laCancion(){
     playLaCancion();
 }
 
+// Smells like teen spirit state
 void smellsLikeTeenSpirit(){
     clearScreen(COLOR_BLACK);
     drawString5x7(30, 53, "Now Playing", COLOR_RED, COLOR_BLACK);
