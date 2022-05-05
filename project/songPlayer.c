@@ -3,25 +3,8 @@
 #include "buzzer.h"
 #include "songPlayer.h"
 
-// Plays careless whisper
 void playCarelessWhisper(){
-    quaterNote(Cs5);
-    eightNote(B4);
-    quaterNote(Fs5);
-    quaterNote(D5);
-    quaterNote(Cs5);
-    eightNote(B4);
-    quaterNote(Fs5);
-    halfNote(D5);
-    
-    quaterNote(A5);
-    eightNote(G5);
-    quaterNote(D5);
-    quaterNote(B4);
-    quaterNote(A5);
-    eightNote(G5);
-    halfNote(D5);
-    
+    buzzer_set_period(200);
 }
 
 // Plays day n nite
@@ -41,43 +24,17 @@ void playSmellsLikeTeenSpirit(){
 
 
 void quaterNote(int note){
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
+
 }
 
 void eightNote(int note){
-    buzzer_set_period(note);
-    buzzer_set_period(note);
+
 }
 
 void halfNote(int note){
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
+
 }
 
 void wholeNote(int note){
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
-    buzzer_set_period(note);
+
 }

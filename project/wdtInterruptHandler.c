@@ -4,13 +4,18 @@
 #include "stateMachine.h"
 #include "lcdutils.h"
 #include "lcddraw.h"
+#include "songPlayer.h"
+
 
 int second_count = 0;
 int second_limit = 250;
 int current_column = 20;
 int current_row = 80;
 
+
+
 void __interrupt_vec(WDT_VECTOR) WDT(){
+    
     second_count ++;
     current_column ++;
     
